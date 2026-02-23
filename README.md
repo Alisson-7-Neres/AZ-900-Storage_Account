@@ -10,25 +10,25 @@
 
 <img src='img/03-storage_account-basics.png'/>
 
-Em **redundancy** teremos quatro opções:
-**Locally-redundant storage (LRS):**
-Datacenter individual na região primária. 
-**Geo-redundant storage (GRS):**
-Datacenter único no primário e região secundária.
-**Zone-redundant storage (ZRS):**
-Três zonas de disponibilidade na região primária.
-**Geo-zone-redundant storage (GZRS):**
-Três zonas de disponibilidade na região primária e um único datacenter na região secundária.
+Em **redundancy** teremos quatro opções: <br>
+**Locally-redundant storage (LRS):** <br>
+Datacenter individual na região primária. <br>
+**Geo-redundant storage (GRS):** <br>
+Datacenter único no primário e região secundária. <br>
+**Zone-redundant storage (ZRS):** <br>
+Três zonas de disponibilidade na região primária. <br>
+**Geo-zone-redundant storage (GZRS):** <br>
+Três zonas de disponibilidade na região primária e um único datacenter na região secundária. <br>
 
 <img src='img/04-storage_account-basics.png'/>
 
-Em **advanced**, temos três opções de **acess tier**:
-**Hot**
-Otimizada para armazenamento de dados acessados com frequência.
-**Cool**
-Otimizada para armazenamento de dados acessados com pouca frequência e armazenados por pelo menos 30 dias.
-**Cold**
-Otimizado para o armazenamento de dados acessados com pouca frequência e armazenados por pelo menos 90 dias.
+Em **advanced**, temos três opções de **acess tier**: <br>
+**Hot** <br>
+Otimizada para armazenamento de dados acessados com frequência. <br>
+**Cool** <br>
+Otimizada para armazenamento de dados acessados com pouca frequência e armazenados por pelo menos 30 dias. <br>
+**Cold** <br>
+Otimizado para o armazenamento de dados acessados com pouca frequência e armazenados por pelo menos 90 dias. <br>
 
 <img src='img/05-storage_account-advanced.png'/>
 
@@ -38,15 +38,15 @@ No caso onde o Storage Account ficar muito tempo 'inativo' é essas opções est
 
 <img src='img/07-storage_account-create.png'/>
 
-Em **Data Storage**, terá três opções:
-**Containers**
-Serviço que orgazina conjuntos de dados não estruturados.
-**File Shares**
-Configura um compartilhamento de arquivos de rede altamente disponível que pode ser utilizado usando o protocolo Bloco de Mensagens do Servidor.
-**Queues**
-Serviço de armazenamento de mensagens que fornece armazenamento e recuperação para grandes quantidades de mensagens, cada uma com até 64 KB.
-**Tables**
-Fornece uma opção de chave/atributo para o armazenamento de dados estruturados não relacionais com um design sem esquema.
+Em **Data Storage**, terá três opções: <br>
+**Containers** <br>
+Serviço que orgazina conjuntos de dados não estruturados. <br>
+**File Shares** <br>
+Configura um compartilhamento de arquivos de rede altamente disponível que pode ser utilizado usando o protocolo Bloco de Mensagens do Servidor. <br>
+**Queues** <br>
+Serviço de armazenamento de mensagens que fornece armazenamento e recuperação para grandes quantidades de mensagens, cada uma com até 64 KB. <br>
+**Tables** <br>
+Fornece uma opção de chave/atributo para o armazenamento de dados estruturados não relacionais com um design sem esquema. <br>
 <img src='img/08-storage_account-data-storage.png'/>
 
 ### Migrate
@@ -85,18 +85,18 @@ Obs.: Esses tokens são importantes na hora do gerenciamentode arquivos (AzCopy)
 Utilitario de linha de comando.
 'https://learn.microsoft.com/pt-br/azure/storage/common/storage-use-azcopy-v10'
 
-Como eu utilizo o OS Big Linux a instalação será essa:
-sudo pamac update
-sudo pamac install azcopy
-sudo dnf install azcopy
+Como eu utilizo o OS Big Linux a instalação será essa: <br>
+sudo pamac update <br>
+sudo pamac install azcopy <br>
+sudo dnf install azcopy <br>
 
-No terminal
-azcopy copy "C:\local\path" "token" --recursive=true
+No terminal <br>
+azcopy copy "C:\local\path" "token" --recursive=true <br>
 
-- C:\local\path -> Pasta de compartilhamento
-- token -> token gerado do Container
+- C:\local\path -> Pasta de compartilhamento <br>
+- token -> token gerado do Container <br>
 
-No terminal
+No terminal <br>
 
 <img src='img/18-storage_account-azcopy.png'/>
 
